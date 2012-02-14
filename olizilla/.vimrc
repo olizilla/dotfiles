@@ -22,6 +22,10 @@ set   wildmenu                      " make tab completion for files/buffers act 
 set   wildmode=list:full            " show a list when pressing tab and complete
 set nowrap                          " don't wrap lines
 
+set   tabstop=2                     " Make tabs as wide as two spaces
+set   list                          " Show “invisible” characters
+set   lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_ 
+
 " ---- terminal settings -----------------------------------------------
 
 syntax      on
