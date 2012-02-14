@@ -6,4 +6,7 @@
 	whitespace = fix,space-before-tab,tab-in-indent,trailing-space
 [color]
 	ui = auto
+[user]
+	name = olizilla
+	email = oli@zilla.org.uk
 
