@@ -8,4 +8,13 @@ export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 # Make some commands not show up in history
-export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+export HISTIGNORE="pwd;exit:date:* --help"
+
+
+export PATH=/opt/local/lib/postgresql92/bin:$PATH:/Users/oli/Code/play:/Users/oli/.cpan/build/jmx4perl-1.06-Rb1R_O/blib/script¬
+
+export PATH=/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:$PATH
+
+export PATH=/Applications/SenchaSDKTools-2.0.0-beta3:$PATH
+
+export SENCHA_SDK_TOOLS_2_0_0_BETA3="/Applications/SenchaSDKTools-2.0.0-beta3"
