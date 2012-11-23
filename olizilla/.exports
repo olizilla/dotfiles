@@ -11,10 +11,11 @@ export HISTCONTROL=ignoredups
 export HISTIGNORE="pwd;exit:date:* --help"
 
 
-export PATH=/opt/local/lib/postgresql92/bin:$PATH:/Users/oli/Code/play:/Users/oli/.cpan/build/jmx4perl-1.06-Rb1R_O/blib/script¬
+export PATH_OVERIDES=/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:/opt/local/lib/postgresql92/bin
 
-export PATH=/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:$PATH
+export PATH_ADDITIONS=/Users/oli/Code/play:/Users/oli/.cpan/build/jmx4perl-1.06-Rb1R_O/blib/script
 
-export PATH=/Applications/SenchaSDKTools-2.0.0-beta3:$PATH
+export PATH=$PATH_OVERIDES:$PATH:$PATH_ADDITIONS
 
-export SENCHA_SDK_TOOLS_2_0_0_BETA3="/Applications/SenchaSDKTools-2.0.0-beta3"
+#export PATH=/Applications/SenchaSDKTools-2.0.0-beta3:$PATH
+#export SENCHA_SDK_TOOLS_2_0_0_BETA3="/Applications/SenchaSDKTools-2.0.0-beta3"
