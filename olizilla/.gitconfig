@@ -1,7 +1,7 @@
 [apply]
 	whitespace = fix
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/oli/.gitignore
 	attributesfile = ~/.gitattributes
 	whitespace = fix,space-before-tab,tab-in-indent,trailing-space
 [color]
@@ -10,3 +10,9 @@
 	name = olizilla
 	email = oli@zilla.org.uk
 
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

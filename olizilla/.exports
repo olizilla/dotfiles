@@ -11,7 +11,7 @@ export HISTCONTROL=ignoredups
 export HISTIGNORE="pwd;exit:date:* --help"
 
 
-export PATH_OVERIDES=/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:/opt/local/lib/postgresql92/bin
+export PATH_OVERIDES=/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:/opt/local/lib/postgresql92/bin:/Users/oli/Code/local/bin:/usr/local/bin
 
 export PATH_ADDITIONS=/Users/oli/Code/play:/Users/oli/.cpan/build/jmx4perl-1.06-Rb1R_O/blib/script
 
