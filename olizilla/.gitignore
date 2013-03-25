@@ -5,6 +5,10 @@ _doc
 .idea
 *.iml
 
+# ---- Sublime Text ----------------------------------------------
+*.sublime-project
+*.sublime-workspace
+
 # ---- OSX -------------------------------------------------------
 .DS_Store
 
