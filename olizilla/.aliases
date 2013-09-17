@@ -1,0 +1,4 @@
+
+alias edit='open -a "sublime text 2"'
+# alias nginx-kill='sudo kill `cat /opt/local/var/run/nginx/nginx.pid`'
+

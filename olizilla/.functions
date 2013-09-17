@@ -1,5 +1,5 @@
-function indexify(){
-	x=1; for i in *JPG; do counter=$(printf %03d $x); ln -s "$i" ./img"$counter".jpg; 
+function indexify() {
+	x=1; for i in *JPG; do counter=$(printf %03d $x); ln -s "$i" ./img"$counter".jpg; done
 }
 
 # Create a new directory and enter it
