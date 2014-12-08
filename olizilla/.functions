@@ -1,3 +1,7 @@
+
+# rbenv autocomplete etc... https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
+eval "$(rbenv init -)"
+
 function indexify() {
 	x=1; for i in *JPG; do counter=$(printf %03d $x); ln -s "$i" ./img"$counter".jpg; done
 }
