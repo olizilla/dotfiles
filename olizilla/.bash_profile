@@ -18,7 +18,7 @@ export LANG="en_US"
 # Add tab completions for brew installed things
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
-  fi
+fi
 
 
 # Add tab completion for `defaults read|write NSGlobalDomain`
