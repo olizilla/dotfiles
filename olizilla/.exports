@@ -10,6 +10,4 @@ export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="pwd;exit:date:* --help"
 
-export PATH_BEFORE="/opt/local/bin:/opt/local/sbin:/usr/local/git/bin:/Users/oli/Code/local/bin:/usr/local/bin"
-export PATH_AFTER=""
-export PATH="$PATH_BEFORE:$PATH:$PATH_AFTER"
+export PATH="/opt/local/bin:/opt/local/sbin:/Users/oli/Code/local/bin:/usr/local/bin:$PATH"
