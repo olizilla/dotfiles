@@ -1,6 +1,6 @@
 # dotfiles
 
-> Setting up a maxOS machine; olizilla edition
+> Setting up a macOS machine; olizilla edition
 
 ## Homebrew all the things
 
