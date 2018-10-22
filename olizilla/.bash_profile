@@ -1,5 +1,5 @@
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
-# ~/.extra can be used for settings you donÃ¢ÂÂt want to commit
+# ~/.extra can be used for settings you don't want to commit
 for file in ~/.{extra,bash_prompt,exports,aliases,functions,bashrc}; do
 	[ -r "$file" ] && source "$file"
 done
@@ -17,12 +17,5 @@ export LANG="en_US"
 
 # Add tab completions for brew installed things
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+	. $(brew --prefix)/etc/bash_completion
 fi
-
-
-# Add tab completion for `defaults read|write NSGlobalDomain`
-# You could just use `-g` instead, but I like being explicit
-#complete -W "NSGlobalDomain" defaults
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
