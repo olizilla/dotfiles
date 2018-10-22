@@ -1,58 +1,22 @@
-[alias]
-	# View the SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph
-	# View the current working tree status using the short format
-	s = status -s
-	# Pull in remote changes for the current repository and all its submodules
-	p = !"git pull; git submodule foreach git pull origin master"
-	# Commit all changes
-	ca = commit -a
-	# Switch to a branch, creating it if necessary
-	go = checkout -B
-	# Undo a `git push`
-	undopush = push -f origin HEAD^:master
-
 [apply]
-	# Detect whitespace errors when applying a patch
 	whitespace = fix
-
 [core]
-	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = ~/.gitignore
+	excludesfile = /Users/oli/.gitignore
 	attributesfile = ~/.gitattributes
-	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
-	whitespace = space-before-tab,indent-with-non-tab,trailing-space
-
+	whitespace = fix,space-before-tab,tab-in-indent,trailing-space
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
-	# Use colors in Git commands that are capable of colored output when outputting to the terminal
 	ui = auto
-[color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
-[color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
-[color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
-[merge]
-	# Include summaries of merged commits in newly created merge commit messages
-	log = true
-
-# URL shorthands
-[url "git@github.com:"]
-	insteadOf = "gh:"
-	pushInsteadOf = "github:"
-	pushInsteadOf = "git://github.com/"
-[url "git://github.com/"]
-	insteadOf = "github:"
-[url "git@gist.github.com:"]
-	insteadOf = "gst:"
-	pushInsteadOf = "gist:"
-	pushInsteadOf = "git://gist.github.com/"
-[url "git://gist.github.com/"]
-	insteadOf = "gist:"
+[user]
+	email = oli@tableflip.io
+	name = Oli Evans
+	signingkey = A2AC979DA8460535
+[push]
+	default = simple
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+[commit]
+	gpgsign = true
+	template = ~/Code/git-commit-template.txt

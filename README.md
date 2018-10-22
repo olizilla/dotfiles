@@ -1,30 +1,72 @@
-# olizilla’s dotfiles 
-Forked from [Mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles), all credit goes there.
+# dotfiles
 
-The original dots are left in place so I can keep track of Mathias changes.
-My dots are kept in the olizilla dir so I can apply the config tweaks once I figure wtf they do.
+> Setting up a maxOS machine; olizilla edition
 
-## Installation
+## Homebrew all the things
 
-### Using Git and the bootstrap script
+```console
+# install brew
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-```bash
-git clone https://github.com/olizilla/dotfiles.git && cd dotfiles && ./bootstrap.sh
+# install all the dev things
+$ brew install node git diff-so-fancy ipfs
+$ brew cask install 1password watch imageoptim gpg-suite atom
+
+# install the browsers
+$ brew cask install firefox google-chrome brave-browser beaker-browser
+
+# install the misc
+$ brew cask install spotify vlc zoomus patchwork keybase dropbox
+
+$ npm install -g nave asciify speed-test wifi-password
 ```
 
-To update, `cd` into your local `dotfiles` repository and then:
+## Manual steps
 
-```bash
-./bootstrap.sh
+- Set up the dotfiles from this repo
+
+```console
+$ git clone https://github.com/olizilla/dotfiles.git
+$ cd dotfiles
+$ ./bootstrap.sh
 ```
 
-To update later on, just run that command again.
+- Set up 1password and sync personal and TF vaults
+- Copy GPG keys
+- Copy ~/.ssh
+- Copy ~/.ssb/{secret,gossip.json}
+- Copy ~/Code/git-commit-template.txt
 
-### Add custom commands without creating a new fork
+## Install from app store
 
-If `~/.extra` exists, it will be sourced along with the other files. You can use this to add a few custom commands without the need to fork this entire repository, or to add commands you don’t want to commit to a public repository.
+- Sketch
+- Pixelmator
+- Icon slate
+
+## Tweaks
+
+- Firefox tweaks (about:config)
+
+```
+# colour handling
+gfx.color_management.mode: 1
+
+# remove the distracting search providers footer from the url bar suggestions
+browser.urlbar.oneOffSearches: false
+```
+
+## Install Fonts
+
+Just more brew!
+
+``` console
+# enable brew based fonts
+$ brew tap homebrew/cask-fonts
+
+# courier Prime Code (set as default in terminal, TextEdit and Atom.
+brew cask install font-courier-prime-code
+```
 
 ## Feedback
 
 Suggestions/improvements should mostly go [back upstream:](https://github.com/mathiasbynens/dotfiles/issues)!
-

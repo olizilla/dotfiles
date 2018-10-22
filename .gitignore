@@ -1,11 +1,20 @@
-# Folder view configuration files
+ # ---- Custom ----------------------------------------------------
+_doc
+
+# ---- IDEA ------------------------------------------------------
+.idea
+*.iml
+
+# ---- Sublime Text ----------------------------------------------
+*.sublime-project
+*.sublime-workspace
+
+# ---- OSX -------------------------------------------------------
 .DS_Store
-Desktop.ini
 
-# Thumbnail cache files
+# Thumbnails
 ._*
-Thumbs.db
 
-# Files that might appear on external disks
+# Files that might appear on external disk
 .Spotlight-V100
 .Trashes

@@ -1,86 +1,32 @@
-" Make vim more useful
-set nocompatible
-" Enhance command-line completion
-set wildmenu
-" Allow cursor keys in insert mode
-set esckeys
-" Optimize for fast terminal connections
-set ttyfast
-" Add the g flag to search/replace by default
-set gdefault
-" Use UTF-8 without BOM
-set encoding=utf-8 nobomb
-" Change mapleader
-let mapleader=","
-" Don’t add empty newlines at the end of files
-set binary
-set noeol
-" Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
-if exists("&undodir")
-	set undodir=~/.vim/undo
-endif
+" vim settings, modified from:
+" http://www.gjvc.com/software/etc/vim/dot-vimrc
 
-" Enable line numbers
-set number
-" Enable syntax highlighting
-syntax on
-" Highlight current line
-set cursorline
-" Make tabs as wide as two spaces
-set tabstop=2
-" Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
-set list
-" Highlight searches
-set hlsearch
-" Ignore case of searches
-set ignorecase
-" Highlight dynamically as pattern is typed
-set incsearch
-" Always show status line
-set laststatus=2
-" Enable mouse in all modes
-set mouse=a
-" Disable error bells
-set noerrorbells
-" Don’t reset cursor to start of line when moving around.
-set nostartofline
-" Show the cursor position
-set ruler
-" Don’t show the intro message when starting vim
-set shortmess=atI
-" Show the current mode
-set showmode
-" Show the filename in the window titlebar
-set title
-" Show the (partial) command as it’s being typed
-set showcmd
-" Use relative line numbers
-if exists("&relativenumber")
-	set relativenumber
-	au BufReadPost * set relativenumber
-endif
-" Start scrolling three lines before the horizontal window border
-set scrolloff=3
+" ---- options ---------------------------------------------------------
 
-" Strip trailing whitespace (,ss)
-function! StripWhitespace()
-	let save_cursor = getpos(".")
-	let old_query = getreg('/')
-	:%s/\s\+$//e
-	call setpos('.', save_cursor)
-	call setreg('/', old_query)
-endfunction
-noremap <leader>ss :call StripWhitespace()<CR>
-" Save a file as root (,W)
-noremap <leader>W :w !sudo tee % > /dev/null<CR>
+set nocompatible                    " vim defaults
+set   autoindent                    " always set autoindenting on
+set nobackup                        " do not keep backup files, it's 70's style cluttering
+set   backspace=indent,eol,start    " make that backspace key work the way it should
+set   copyindent                    " copy the previous indentation on autoindenting
+set   encoding=utf-8                "
+set   ignorecase                    " ignore case when searching
+set   incsearch                     " incremental search
+set   number                        " always show line numbers
+set   pastetoggle=<F2>              " when in insert mode, press <F2> to go to paste mode, where you can paste mass data that won't be autoindented
+set   showmatch                     " set show matching parenthesis
+set   showtabline=2                 " show a tabbar on top, always
+set   smartcase                     " ignore case if search pattern is all lowercase, case-sensitive otherwise
+set   termencoding=utf-8            "
+set   wildignore=*.pyc,*.class,*.o  "
+set   wildmenu                      " make tab completion for files/buffers act like bash
+set   wildmode=list:full            " show a list when pressing tab and complete
+set nowrap                          " don't wrap lines
 
-" Automatic commands
-if has("autocmd")
-	" Enable file type detection
-	filetype on
-	" Treat .json files as .js
-	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-endif
+set   tabstop=2                     " Make tabs as wide as two spaces
+set   list                          " Show “invisible” characters
+set   lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_ 
+
+" ---- terminal settings -----------------------------------------------
+
+syntax      on
+

@@ -8,4 +8,7 @@ export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 # Make some commands not show up in history
-export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+export HISTIGNORE="pwd;exit:date:* --help"
+
+export GOPATH=~/Code/go
+export PATH="/opt/local/bin:/opt/local/sbin:/Users/oli/Code/local/bin:/usr/local/bin:/usr/local/sbin:$PATH:$GOPATH/bin:/usr/local/opt/go/libexec/bin"
