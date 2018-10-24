@@ -9,8 +9,8 @@
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install all the dev things
-$ brew install node git diff-so-fancy ipfs
-$ brew cask install 1password watch imageoptim gpg-suite atom
+$ brew install node git diff-so-fancy ipfs wget watch
+$ brew cask install 1password imageoptim gpg-suite atom
 
 # install the browsers
 $ brew cask install firefox google-chrome brave-browser beaker-browser
