@@ -13,7 +13,7 @@ $ brew install node git diff-so-fancy ipfs wget watch
 $ brew cask install 1password imageoptim gpg-suite atom
 
 # install the fonts
-$ brew cask install font-inter-ui font-montserrat font-courier-prime-code
+$ brew cask install font-inter-ui font-montserrat
 
 # install the browsers
 $ brew cask install firefox google-chrome brave-browser beaker-browser
