@@ -11,6 +11,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 # install the dev things
 $ brew install bash-completion node git diff-so-fancy ipfs wget watch
 $ brew cask install 1password imageoptim gpg-suite atom
+$ apm install file-icons
 
 # install the fonts
 $ brew cask install font-inter-ui font-montserrat font-courier-prime-code
