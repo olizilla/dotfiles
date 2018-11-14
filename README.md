@@ -14,7 +14,7 @@ $ brew cask install 1password imageoptim gpg-suite atom
 $ apm install file-icons linter linter-js-standard
 
 # install the fonts
-$ brew cask install font-inter-ui font-montserrat font-courier-prime-code
+$ brew cask install font-inter-ui font-montserrat
 
 # install the browsers
 $ brew cask install firefox google-chrome brave-browser beaker-browser
