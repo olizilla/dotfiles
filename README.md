@@ -9,8 +9,9 @@
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install the dev things
-$ brew install node git diff-so-fancy ipfs wget watch
+$ brew install bash-completion node git diff-so-fancy ipfs wget watch watchman
 $ brew cask install 1password imageoptim gpg-suite atom
+$ apm install file-icons linter linter-js-standard
 
 # install the fonts
 $ brew cask install font-inter-ui font-montserrat font-courier-prime-code
@@ -20,8 +21,7 @@ $ brew cask install firefox google-chrome brave-browser beaker-browser
 
 # install the others
 $ brew cask install spotify vlc zoomus patchwork keybase dropbox docker
-
-$ npm install -g nave asciify speed-test wifi-password-cli
+$ npm install -g nave asciify speed-test wifi-password-cli trash-cli
 ```
 
 ## Manual steps
