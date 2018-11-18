@@ -21,7 +21,7 @@ $ brew cask install firefox google-chrome brave-browser beaker-browser
 
 # install the others
 $ brew cask install spotify vlc zoomus patchwork keybase dropbox docker
-$ npm install -g nave asciify speed-test wifi-password-cli trash-cli
+$ npm install -g nave asciify speed-test wifi-password-cli trash-cli npm-scripts
 ```
 
 ## Manual steps
