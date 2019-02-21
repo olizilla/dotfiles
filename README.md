@@ -9,9 +9,9 @@
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install the dev things
-$ brew install bash-completion node git diff-so-fancy ipfs wget watch watchman
+$ brew install bash-completion node git diff-so-fancy ipfs wget watch watchman shellcheck
 $ brew cask install 1password imageoptim gpg-suite atom
-$ apm install file-icons linter linter-js-standard
+$ apm install file-icons linter linter-js-standard linter-shellcheck
 
 # install the fonts
 $ brew cask install font-inter-ui font-montserrat
