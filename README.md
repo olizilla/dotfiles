@@ -10,8 +10,16 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 # install the dev things
 $ brew install bash-completion node git diff-so-fancy ipfs wget watch watchman shellcheck
-$ brew cask install 1password imageoptim gpg-suite atom
+$ brew cask install 1password imageoptim gpg-suite 
+
+# atom flavour
+$ brew cask install atom
 $ apm install file-icons linter linter-js-standard linter-shellcheck
+
+# or code flavour
+$ brew cask install visual-studio-code
+# ugh
+$ echo "akamud.vscode-theme-onedark fabiospampinato.vscode-open-in-github ms-vscode.Go timonwong.shellcheck" | xargs -n 1 code --install-extension
 
 # install the fonts
 $ brew cask install font-inter-ui font-montserrat
