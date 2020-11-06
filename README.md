@@ -10,7 +10,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 # install the dev things
 $ brew install bash-completion node git diff-so-fancy ipfs wget watch watchman shellcheck
-$ brew cask install 1password imageoptim gpg-suite firefox sketch google-chrome 
+$ brew cask install 1password imageoptim gpg-suite firefox sketch google-chrome
 
 # atom flavour
 $ brew cask install atom
@@ -46,7 +46,6 @@ $ ./bootstrap.sh
 - Copy GPG keys
 - Copy ~/.ssh
 - Copy ~/.ssb/{secret,gossip.json}
-- Copy ~/Code/git-commit-template.txt
 
 ## Install from app store
 
