@@ -9,8 +9,8 @@
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install the dev things
-$ brew install bash-completion node git diff-so-fancy ipfs wget watch watchman shellcheck
-$ brew cask install 1password imageoptim gpg-suite firefox sketch google-chrome
+$ brew install bash-completion node git diff-so-fancy ipfs wget watch watchman shellcheck fish
+$ brew cask install 1password imageoptim gpg-suite firefox sketch google-chrome tableplus datagrip
 
 # atom flavour
 $ brew cask install atom
