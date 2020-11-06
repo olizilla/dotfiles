@@ -10,7 +10,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 # install the dev things
 $ brew install bash-completion node git diff-so-fancy ipfs wget watch watchman shellcheck
-$ brew cask install 1password imageoptim gpg-suite firefox google-chrome
+$ brew cask install 1password imageoptim gpg-suite firefox sketch google-chrome 
 
 # atom flavour
 $ brew cask install atom
@@ -50,7 +50,6 @@ $ ./bootstrap.sh
 
 ## Install from app store
 
-- Sketch
 - Pixelmator
 - Icon slate
 
