@@ -10,7 +10,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 # install the dev things
 $ brew install bash-completion node git diff-so-fancy ipfs wget watch watchman shellcheck
-$ brew cask install 1password imageoptim gpg-suite 
+$ brew cask install 1password imageoptim gpg-suite firefox google-chrome
 
 # atom flavour
 $ brew cask install atom
@@ -21,14 +21,14 @@ $ brew cask install visual-studio-code
 # ugh
 $ echo "akamud.vscode-theme-onedark fabiospampinato.vscode-open-in-github ms-vscode.Go timonwong.shellcheck mauve.terraform vscoss.vscode-ansible" | xargs -n 1 code --install-extension
 
-# install the fonts
-$ brew cask install font-inter-ui font-montserrat
+# enable brew based fonts
+$ brew tap homebrew/cask-fonts
 
-# install the browsers
-$ brew cask install firefox google-chrome brave-browser beaker-browser
+# courier Prime Code (set as default in terminal, TextEdit and Atom.
+brew cask install font-courier-prime-code font-courier-prime-sans
 
 # install the others
-$ brew cask install spotify vlc zoomus patchwork keybase dropbox docker
+$ brew cask install spotify vlc zoomus patchwork dropbox docker
 $ npm install -g nave asciify speed-test wifi-password-cli trash-cli npm-scripts
 ```
 
@@ -64,18 +64,6 @@ gfx.color_management.mode: 1
 
 # remove the distracting search providers footer from the url bar suggestions
 browser.urlbar.oneOffSearches: false
-```
-
-## Install Fonts
-
-Just more brew!
-
-``` console
-# enable brew based fonts
-$ brew tap homebrew/cask-fonts
-
-# courier Prime Code (set as default in terminal, TextEdit and Atom.
-brew cask install font-courier-prime-code
 ```
 
 ## Feedback
