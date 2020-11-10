@@ -29,7 +29,11 @@ brew cask install font-courier-prime-code font-courier-prime-sans
 
 # install the others
 $ brew cask install spotify vlc zoomus patchwork dropbox docker
-$ npm install -g nave asciify speed-test wifi-password-cli trash-cli npm-scripts
+$ npm install -g nave asciify speed-test wifi-password-cli trash-cli npm-scripts standard
+
+# set fish as default
+$ sudo echo "/usr/local/bin/fish" >> /etc/shells
+$ chsh -s /usr/local/bin/fish
 ```
 
 ## Manual steps
