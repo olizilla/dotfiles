@@ -10,7 +10,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 # install the dev things
 $ brew install bash-completion node git diff-so-fancy ipfs wget watch watchman shellcheck fish
-$ brew cask install 1password imageoptim gpg-suite firefox sketch google-chrome tableplus datagrip nordvpn slack
+$ brew cask install 1password imageoptim gpg-suite firefox sketch google-chrome tableplus datagrip slack
 
 # atom flavour
 $ brew cask install atom
@@ -51,6 +51,7 @@ $ ./bootstrap.sh
 
 - Pixelmator
 - Icon slate
+- Nord VPN
 
 ## Tweaks
 
