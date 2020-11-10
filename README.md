@@ -10,7 +10,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 # install the dev things
 $ brew install bash-completion node git diff-so-fancy ipfs wget watch watchman shellcheck fish
-$ brew cask install 1password imageoptim gpg-suite firefox sketch google-chrome tableplus datagrip slack
+$ brew cask install 1password imageoptim gpg-suite firefox sketch google-chrome tableplus datagrip slack postgres
 
 # atom flavour
 $ brew cask install atom
@@ -34,6 +34,9 @@ $ npm install -g nave asciify speed-test wifi-password-cli trash-cli npm-scripts
 # set fish as default
 $ sudo echo "/usr/local/bin/fish" >> /etc/shells
 $ chsh -s /usr/local/bin/fish
+
+$ add postgres bins to path
+$ set -U fish_user_paths /Applications/Postgres.app/Contents/Versions/latest/bin $fish_user_paths
 ```
 
 ## Manual steps
