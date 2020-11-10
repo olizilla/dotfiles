@@ -19,7 +19,7 @@ $ apm install file-icons linter linter-js-standard linter-shellcheck
 # or code flavour
 $ brew cask install visual-studio-code
 # ugh
-$ echo "akamud.vscode-theme-onedark fabiospampinato.vscode-open-in-github ms-vscode.Go timonwong.shellcheck mauve.terraform vscoss.vscode-ansible" | xargs -n 1 code --install-extension
+$ echo "chenxsan.vscode-standardjs akamud.vscode-theme-onedark fabiospampinato.vscode-open-in-github ms-vscode.Go timonwong.shellcheck mauve.terraform vscoss.vscode-ansible" | xargs -n 1 code --install-extension
 
 # enable brew based fonts
 $ brew tap homebrew/cask-fonts
