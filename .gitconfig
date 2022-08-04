@@ -8,9 +8,9 @@
 [color]
 	ui = auto
 [user]
-	email = oli@tableflip.io
+	email = oli@protocol.ai
 	name = Oli Evans
-	signingkey = A2AC979DA8460535
+	signingkey = BA36AFABBE96D2F5
 [push]
 	default = simple
 [filter "lfs"]
