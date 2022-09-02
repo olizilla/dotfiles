@@ -27,7 +27,7 @@ fish_add_path /opt/homebrew/bin
 fisher install mattgreen/lucid.fish
 
 # add dev tools
-brew install git diff-so-fancy wget watch shellcheck exa awscli jq
+brew install git diff-so-fancy wget watch shellcheck exa awscli jq act
 
 # set up asdf
 brew install asdf
@@ -41,7 +41,7 @@ asdf global nodejs lts
 
 # add vs-code
 brew install --cask visual-studio-code
-echo "chenxsan.vscode-standardjs akamud.vscode-theme-onedark fabiospampinato.vscode-open-in-github timonwong.shellcheck" | xargs -n 1 code --install-extension
+echo "chenxsan.vscode-standardjs akamud.vscode-theme-onedark fabiospampinato.vscode-open-in-github timonwong.shellcheck ms-azuretools.vscode-docker" | xargs -n 1 code --install-extension
 
 # add fonts
 brew tap homebrew/cask-fonts
