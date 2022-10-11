@@ -30,3 +30,5 @@
 [merge "ansible-vault"]
 	name = ansible-vault merge driver
 	driver = /usr/local/bin/ansible-vault-merge -- %O %A %B %P
+[init]
+	defaultBranch = main
