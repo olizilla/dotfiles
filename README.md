@@ -27,7 +27,7 @@ fish_add_path /opt/homebrew/bin
 fisher install mattgreen/lucid.fish
 
 # add dev tools
-brew install git diff-so-fancy wget watch shellcheck exa awscli jq act
+brew install git diff-so-fancy wget watch shellcheck exa awscli jq act gh
 
 # set up asdf
 brew install asdf
