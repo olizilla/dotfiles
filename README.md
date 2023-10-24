@@ -27,7 +27,7 @@ fish_add_path /opt/homebrew/bin
 fisher install mattgreen/lucid.fish
 
 # add dev tools
-brew install git diff-so-fancy wget watch shellcheck exa awscli jq act gh
+brew install git diff-so-fancy wget watch shellcheck exa awscli jq jid act gh bitwise gron parallel
 
 # set up asdf
 brew install asdf
@@ -49,7 +49,12 @@ brew install --cask font-courier-prime-code font-courier-prime-sans
 
 # add apps
 brew install --cask 1password imageoptim gpg-suite firefox sketch google-chrome datagrip slack spotify vlc zoom dropbox docker rectangle
+
+# add alternate apps
+brew tap homebrew/cask-versions
+brew install --cask firefox-developer-edition
 ```
+
 
 ## Generate a new GPG key
 
