@@ -102,8 +102,10 @@ see: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/add
 # OSX tweaks
 
 ```fish
-# from https://macos-strap.herokuapp.com/strap.sh?text=1
+# less intense indents
+defaults write com.apple.TextEdit "TabWidth" '2'
 
+# from https://macos-strap.herokuapp.com/strap.sh?text=1
 # disable Java in safari
 sudo defaults write com.apple.Safari \
   com.apple.Safari.ContentPageGroupIdentifier.WebKit2JavaEnabled \
